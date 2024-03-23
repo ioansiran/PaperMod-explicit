@@ -168,18 +168,23 @@
         cursor: pointer; /* Changes cursor to pointer on hover to indicate it's clickable */
         text-align: center; /* Centers the text inside the blockquote/button */
         text-decoration: none !important; /* Removes underline from any text or links */
+        -webkit-text-decoration: none !important; /* Removes underline from any text or links */
         font-weight: bold; /* Makes the text bold */
         transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
     }
 
     blockquote > p > a{
         color: #ffffff; /* Text color */
-        text-decoration: none !important; /* Removes underline from any text or links */
+        box-shadow: none !important; /* Removes underline from any text or links */
         border: none !important; /* Removes border from any text or links */
+        -webkit-text-decoration: none !important; /* Removes underline from any text or links */
+
     }
     blockquote p {
         text-decoration: none !important; /* Removes underline from any text or links */
         margin: 0 !important; /* Removes default margin to make it look more like a button */
+        -webkit-text-decoration: none !important; /* Removes underline from any text or links */
+
     }
     blockquote:hover {
         background-color: #D15530; /* Darker background color on hover */
