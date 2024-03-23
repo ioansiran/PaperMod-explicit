@@ -155,7 +155,40 @@
     </style>
     {{- end }}
 </noscript>
+<style>
+    blockquote {
+        display: inline-block; /* Makes the blockquote behave like an inline element */
+        padding: 10px 20px !important; /* Adds space inside the blockquote, similar to a button */
+        margin: 0; /* Removes default margin to make it look more like a button */
+        background-color: #EB6136; /* Button background color */
+        color: #ffffff; /* Text color */
+        border: none !important; /* Border to make it look like a button */
+        border-radius: 5px; /* Rounded corners for the button */
+        cursor: pointer; /* Changes cursor to pointer on hover to indicate it's clickable */
+        text-align: center; /* Centers the text inside the blockquote/button */
+        text-decoration: none !important; /* Removes underline from any text or links */
+        font-weight: bold; /* Makes the text bold */
+        transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+    }
 
+    blockquote > p > a{
+        color: #ffffff; /* Text color */
+        text-decoration: none !important; /* Removes underline from any text or links */
+        border: none !important; /* Removes border from any text or links */
+    }
+    blockquote p {
+        text-decoration: none !important; /* Removes underline from any text or links */
+        margin: 0 !important; /* Removes default margin to make it look more like a button */
+    }
+    blockquote:hover {
+        background-color: #D15530; /* Darker background color on hover */
+     }
+    a, a:visited, a:hover, a:active {
+        text-decoration: none !important;
+        text-underline: none !important;
+    }
+
+</style>
 {{- partial "extend_head.html" . -}}
 
 {{- /* Misc */}}
